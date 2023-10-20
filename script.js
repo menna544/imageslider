@@ -12,7 +12,7 @@ images.src=imgpho[i]
 }
 function displayPreviousImage() {
     i--;
-    if(i=0){
+    if(i<0){
         i=imgpho.length-1;
         images.src=imgpho[i];
 }else{
