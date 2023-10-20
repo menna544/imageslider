@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Exo+2&family=Glory&family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,400;1,900&family=Sofia&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <label class="logo"><span>M</span>enna</label>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav class="navbar">
+            <label class="logoo"><span>M</span>enna</label>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="navyy">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+    <div class="main">
+      <div class="image">
+                <img src="./images/photo_2023-10-13_01-10-38.jpg" alt="image" class="img"/>
+                <div class="btn1">
+                <button><i class="fa-solid fa-chevron-left" onclick="displayPreviousImage()"></i></button>
+                <button><i class="fa-solid fa-chevron-right" onclick="displayNextImage()"></i></button>
+            </div>
+        </div>
+    </div>
+    <section class="home" id="home">
+        <div class="home-content content">
+            <div class="container">
+                <div class="intro-sec">
+                    Hello❤️❤️....
+                </div>
+                <h1>
+                    <span> I'm</span> Menna<br>a
+                    <span class="job">Front End Devoloper</span>
+                </h1>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"
+                            onclick="window.location.href='https://www.instagram.com/';"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"
+                            onclick="window.location.href='https://www.facebook.com/';"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"
+                            onclick="window.location.href='https://github.com/menna544'"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="cards" id="Services">
+        <h2 class="title">Services :</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    <h3>Build Html and Css</h3>
+                    <p>,Learning Web Development has never been so easy. Understanding the concepts of Web Development
+                        from its roots is the most important thing. It is a widely accepted concept that HTML & CSS are
+                        the nuclei of Web Development.Change Html and Css to a real project with all code and responsive
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <div class="info">
+                    <h3>Help you to be a front end devoloper</h3>
+                    <p>,A front-end system is part of an information system that is directly accessed and interacted
+                        with by the user to receive or utilize back-end capabilities of the host system. It enables
+                        users to access and request the features and services of the underlying information system. The
+                        front-end system can be a software application or the combination or hardware, software and
+                        network resources.You should learn html,css,javascript at first and then React and more</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="info">
+                    <h3>Help you in figma</h3>
+                    <p>Figma is a collaborative interface design tool that’s taking the design world by storm. Unlike
+                        Sketch, which runs as a standalone MacOS app, Figma is entirely browser-based, and therefore
+                        works not only on Macs, but also on PCs running Windows or Linux, and even on Chromebooks. It
+                        also offers a web API, and it’s free!</p>
+                </div>
+            </div>
+    </section>
+    <section class="cards" id="About">
+        <h2 class="title">About Me :</h2>
+        <div class="content">
+            <div class="cardss">
+                <div class="icon"><i class="fa-solid fa-address-card"></i>
+                </div>
+                <div class="info">
+                    <h3>More about me</h3>
+                    <p>I'm Front end devoloper,good at html,css,little javascript,made some templets at html and css and
+                        js allow users to access and interact with the site or app and little in figma design.
+                        Strong understanding of responsive web design principles and the ability to create
+                        mobile-friendly layouts.
+                        Knowledge of front-end frameworks and libraries such as React, Angular, or Vue.js.
+                        Familiarity with version control systems like Git for collaborative development.
+                        Understanding of web performance optimization techniques to ensure fast and efficient user
+                        experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="Contact">
+        <h2 class="title">Contact Me :</h2>
+        <div class="content">
+            <div class="cardss">
+                <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i>
+                    <div class="infoo">
+                        <p>phone : 01097315496<br>
+                            Email : mennamaged121@gmail.com.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
